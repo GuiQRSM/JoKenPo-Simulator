@@ -24,37 +24,49 @@ class _GamejkpState extends State<Gamejkp> {
         ),),
         backgroundColor: Colors.tealAccent,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(16),
-            child:Text(
+      body: Container(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(top: 32, bottom: 16),
+              child:Text(
                 "O desafiador",
-            style: TextStyle(
-            fontSize: 15,
-            color: Colors.teal,
-            fontWeight: FontWeight.w700,
-             ),
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.teal,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
-          ),
-          //Image.asset(),
-          Text(
-              "$_text",
-          style: TextStyle(
-            fontSize: 15,
-            color: Colors.teal,
-            fontWeight: FontWeight.w700,
-           ),
-          ),
-          Row(
-            children: <Widget>[
-              //Image.asset(),
-              //Image.asset(),
-              //Image.asset(),
-            ],
-          )
-        ],
+            Image.asset(
+              "images/padrao.png",
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 32, bottom: 16),
+              child: Text(
+                "$_text",
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.teal,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+             Row(
+              children: <Widget>[
+                Image.asset(
+                  "images/pedra.png",
+                ),
+                Image.asset(
+                  "images/papel.png",
+                ),
+                //Image.asset(),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
