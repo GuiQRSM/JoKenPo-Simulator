@@ -55,14 +55,20 @@ class _GamejkpState extends State<Gamejkp> {
               ),
             ),
              Row(
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Image.asset(
                   "images/pedra.png",
+                  height: 90,
                 ),
                 Image.asset(
                   "images/papel.png",
+                  height: 90,
                 ),
-                //Image.asset(),
+                Image.asset(
+                  "images/tesoura.png",
+                  height: 90,
+                ),
               ],
             )
           ],
