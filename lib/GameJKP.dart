@@ -43,6 +43,7 @@ class _GamejkpState extends State<Gamejkp> {
             GestureDetector(
               onTap: (){print("Clique unico!");},
               onDoubleTap: (){print("Dois cliques na imagen!");},
+              onLongPress: (){print("Clique longo na imagen!");},
               child: Image.asset(
                 "images/padrao.png",
               ),
