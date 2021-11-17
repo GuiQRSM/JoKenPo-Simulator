@@ -40,8 +40,10 @@ class _GamejkpState extends State<Gamejkp> {
                 ),
               ),
             ),
-            Image.asset(
-              "images/padrao.png",
+            GestureDetector(
+              child: Image.asset(
+                "images/padrao.png",
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
