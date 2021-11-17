@@ -41,6 +41,7 @@ class _GamejkpState extends State<Gamejkp> {
               ),
             ),
             GestureDetector(
+              onTap: (){print("Clique unico!");},
               child: Image.asset(
                 "images/padrao.png",
               ),
