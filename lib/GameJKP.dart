@@ -60,19 +60,19 @@ class _GamejkpState extends State<Gamejkp> {
                 GestureDetector(
                  child: Image.asset(
                     "images/pedra.png",
-                    height: 90,
+                    height: 95gi,
                   ),
                 ),
                 GestureDetector(
                   child: Image.asset(
                     "images/papel.png",
-                    height: 90,
+                    height: 95,
                   ),
                 ),
                 GestureDetector(
                   child:  Image.asset(
                     "images/tesoura.png",
-                    height: 90,
+                    height: 95,
                   ),
                 ),
               ],
