@@ -12,7 +12,7 @@ class _GamejkpState extends State<Gamejkp> {
 
   var _text = "Resultado!";
 
-  var appImage = AssetImage("images/padrao.png");
+  var _appImage = AssetImage("images/padrao.png");
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +42,7 @@ class _GamejkpState extends State<Gamejkp> {
                 ),
               ),
             ),
-            Image.asset(
-              "images/padrao.png",
-            ),
+           Image(image: this._appImage),
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
               child: Text(
