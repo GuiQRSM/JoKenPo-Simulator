@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class Gamejkp extends StatefulWidget {
   const Gamejkp({Key? key}) : super(key: key);
@@ -14,9 +15,14 @@ class _GamejkpState extends State<Gamejkp> {
 
   var _appImage = AssetImage("images/padrao.png");
 
-  void _selectionAction(String comandUser) {
+  void _selectionApp(String comandUSer) {
 
+    var options = ["pedra", "papel", "tesoura"];
+    var random = Random().nextInt(3);
+    var jokenApp = options[random];
 
+    print("Jogada do App: " + jokenApp);
+    print("Opção do usuario: " + comandUSer);
 
   }
 
@@ -64,21 +70,21 @@ class _GamejkpState extends State<Gamejkp> {
                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
-                  onTap: () => _selectionAction("pedra"),
+                  onTap: () => _selectionApp("pedra"),
                  child: Image.asset(
                     "images/pedra.png",
                     height: 95,
                   ),
                 ),
                 GestureDetector(
-                  onTap: () => _selectionAction("papel"),
+                  onTap: () => _selectionApp("papel"),
                   child: Image.asset(
                     "images/papel.png",
                     height: 95,
                   ),
                 ),
                 GestureDetector(
-                  onTap: () => _selectionAction("tesoura"),
+                  onTap: () => _selectionApp("tesoura"),
                   child:  Image.asset(
                     "images/tesoura.png",
                     height: 95,
