@@ -43,6 +43,25 @@ class _GamejkpState extends State<Gamejkp> {
         break;
     }
 
+    if(
+    (comandUSer == "pedra" && jokenApp == "tesoura")||
+        (comandUSer == "papel" && jokenApp == "pedra")||
+        (comandUSer == "tesoura" && jokenApp == "papel")
+    ){
+      setState(() {
+        _text = "Você venceu!";
+      });
+    }else if(
+    (jokenApp == "pedra" && comandUSer == "tesoura")||
+        (jokenApp == "papel" && comandUSer == "pedra")||
+        (jokenApp == "tesoura" && comandUSer == "papel")
+    ){
+      setState(() {
+        _text = "Você foi derrotado!";
+      });
+    }else{
+      _text = "Ops,Houve empate!";
+    }
   }
 
   @override
