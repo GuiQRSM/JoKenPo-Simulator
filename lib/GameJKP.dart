@@ -14,6 +14,12 @@ class _GamejkpState extends State<Gamejkp> {
 
   var _appImage = AssetImage("images/padrao.png");
 
+  void _selectionAction(String comandUser) {
+
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,18 +64,21 @@ class _GamejkpState extends State<Gamejkp> {
                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
+                  onTap: ,
                  child: Image.asset(
                     "images/pedra.png",
-                    height: 95gi,
+                    height: 95,
                   ),
                 ),
                 GestureDetector(
+                  onTap: ,
                   child: Image.asset(
                     "images/papel.png",
                     height: 95,
                   ),
                 ),
                 GestureDetector(
+                  onTap: ,
                   child:  Image.asset(
                     "images/tesoura.png",
                     height: 95,
