@@ -40,13 +40,8 @@ class _GamejkpState extends State<Gamejkp> {
                 ),
               ),
             ),
-            GestureDetector(
-              onTap: (){print("Clique unico!");},
-              onDoubleTap: (){print("Dois cliques na imagen!");},
-              onLongPress: (){print("Clique longo na imagen!");},
-              child: Image.asset(
-                "images/padrao.png",
-              ),
+            Image.asset(
+              "images/padrao.png",
             ),
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
