@@ -12,6 +12,8 @@ class _GamejkpState extends State<Gamejkp> {
 
   var _text = "Resultado!";
 
+  var appImage = AssetImage("images/padrao.png");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
