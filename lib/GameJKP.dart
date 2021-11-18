@@ -16,13 +16,32 @@ class _GamejkpState extends State<Gamejkp> {
   var _appImage = AssetImage("images/padrao.png");
 
   void _selectionApp(String comandUSer) {
-
     var options = ["pedra", "papel", "tesoura"];
     var random = Random().nextInt(3);
     var jokenApp = options[random];
 
     print("Jogada do App: " + jokenApp);
     print("Opção do usuario: " + comandUSer);
+
+    switch(jokenApp){
+      case "pedra" :
+        setState(() {
+          this._appImage = AssetImage("images/pedra.png");
+        });
+        break;
+
+      case "papel" :
+        setState(() {
+          this._appImage = AssetImage("images/papel.png");
+        });
+        break;
+
+      case "tesoura" :
+        setState(() {
+          this._appImage = AssetImage("images/tesoura.png");
+        });
+        break;
+    }
 
   }
 
@@ -58,7 +77,7 @@ class _GamejkpState extends State<Gamejkp> {
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
               child: Text(
-                "$_text",
+                this._text,
                 style: TextStyle(
                   fontSize: 15,
                   color: Colors.teal,
