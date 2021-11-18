@@ -64,21 +64,21 @@ class _GamejkpState extends State<Gamejkp> {
                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
-                  onTap: ,
+                  onTap: () => _selectionAction("pedra"),
                  child: Image.asset(
                     "images/pedra.png",
                     height: 95,
                   ),
                 ),
                 GestureDetector(
-                  onTap: ,
+                  onTap: () => _selectionAction("papel"),
                   child: Image.asset(
                     "images/papel.png",
                     height: 95,
                   ),
                 ),
                 GestureDetector(
-                  onTap: ,
+                  onTap: () => _selectionAction("tesoura"),
                   child:  Image.asset(
                     "images/tesoura.png",
                     height: 95,
